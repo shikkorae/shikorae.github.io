@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест | AlterEgo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="test.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">AlterEgo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="zxc.html">ZXC</a></li>
+                <li><a href="test.html" class="active">Тест</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1>Тест: Ты кто?</h1>
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. Как ты обычно играешь в доте?</p>
+                    <label><input type="radio" name="q1" value="a"> Еблан</label>
+                    <label><input type="radio" name="q1" value="b"> Лучший в мире</label>
+                    <label><input type="radio" name="q1" value="c"> Сижу в таверне 70 минут</label>
+                </div>
+                
+                <div class="question">
+                    <p>2. Твой главный скилл?</p>
+                    <label><input type="radio" name="q2" value="a"> Фарм 70 минут</label>
+                    <label><input type="radio" name="q2" value="b"> Сливать мид</label>
+                    <label><input type="radio" name="q2" value="c"> Давать блекхол в крипов</label>
+                </div>
+                
+                <div class="question">
+                    <p>3. Твой любимый герой?</p>
+                    <label><input type="radio" name="q3" value="a"> Пудж-инвалид</label>
+                    <label><input type="radio" name="q3" value="b"> Энигма</label>
+                    <label><input type="radio" name="q3" value="c"> Револьвер и шотганы</label>
+                </div>
+                
+                <div class="question">
+                    <p>4. Твоя любимая музыка?</p>
+                    <label><input type="radio" name="q4" value="a"> RR</label>
+                    <label><input type="radio" name="q4" value="b"> Чишокич</label>
+                    <label><input type="radio" name="q4" value="c"> Офисные стратегии</label>
+                </div>
+                
+                <div class="question">
+                    <p>5. Твой главный недостаток?</p>
+                    <label><input type="radio" name="q5" value="a"> Тима долбаебов</label>
+                    <label><input type="radio" name="q5" value="b"> Сап хуесос</label>
+                    <label><input type="radio" name="q5" value="c"> Не шарю за чишокича</label>
+                </div>
+                
+                <div class="question">
+                    <p>6. Твой стиль игры?</p>
+                    <label><input type="radio" name="q6" value="a"> Ебанутая свага</label>
+                    <label><input type="radio" name="q6" value="b"> Пошлая молли</label>
+                    <label><input type="radio" name="q6" value="c"> Стратегический миражик</label>
+                </div>
+                
+                <div class="question">
+                    <p>7. Кто ты?</p>
+                    <label><input type="radio" name="q7" value="a"> Nightfall</label>
+                    <label><input type="radio" name="q7" value="b"> Murzofix</label>
+                    <label><input type="radio" name="q7" value="c"> Второй человек после папича</label>
+                </div>
+                
+                <button type="submit">Узнать результат</button>
+            </form>
+            
+            <div id="result" class="hidden">
+                <h2>Результат:</h2>
+                <p id="result-text"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>по всем вопросам @shikkoraee</p>
+    </footer>
+</body>
+</html>

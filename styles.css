@@ -232,4 +232,75 @@ footer {
         height: 240px;
     }
 }
+/* Мобильные стили (экран меньше 768px) */
+@media (max-width: 768px) {
+    /* Общие стили для мобильных */
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    header {
+        padding: 0.5rem;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    /* Стили для профилей */
+    .profile {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .profile h2 {
+        font-size: 1.2rem;
+    }
+    
+    /* Гифки на главной */
+    .gif-container {
+        width: 100%;
+        max-width: 320px;
+        height: 240px; /* Сохраняем 4:3 */
+        margin: 10px auto;
+    }
+    
+    /* Текст в профилях */
+    .profile p {
+        margin: 0.5rem 0;
+    }
+    
+    /* Уменьшаем отступы */
+    main {
+        padding: 1rem;
+    }
+}
+
+/* Очень маленькие экраны (меньше 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+    
+    .profile h2 {
+        font-size: 1.1rem;
+    }
+    
+    .gif-container {
+        height: 180px;
+    }
+    
+    /* Убираем border-left на маленьких экранах */
+    .profile {
+        border-left: none;
+        border-radius: 5px;
+        border: 1px solid #ff3333;
+    }
+}
 /* Остальные стили остаются как были */
